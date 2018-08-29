@@ -1,0 +1,320 @@
+/* CSS stylesheet */
+body {
+  background-color: #fff;
+  font-family: 'Catamaran', sans-serif;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(21,1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+/*Header Image and Title*/
+
+header {
+  background-color: rgb(52, 57, 73);
+  border-bottom: 1px solid rgba(52, 57, 73);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+  grid-column: 1 /span 12;
+  grid-row: 1 / span 5;
+}
+
+header img {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Open Sans",arial,sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*Main Navigation Tile*/
+
+.tile {
+  background-color: rgba(31, 37, 56, .8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  margin-top: 40px;
+  color: #ffffff;
+  font-family: "Open Sans",arial,sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.description {
+  color: #ffffff;
+  font-family: "Open Sans",arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*Selection Tiles*/
+
+.all {
+  grid-column: 3 /span 2;
+  grid-row: 6 /span 3;
+}
+
+.somdet {
+  grid-column: 5 /span 2;
+  grid-row: 6 /span 3;
+}
+
+.skin {
+  grid-column: 7 /span 2;
+  grid-row: 6 /span 3;
+}
+
+.pidtha {
+  grid-column: 9 /span 2;
+  grid-row: 6 /span 3;
+}
+
+.paen {
+  grid-column: 3 /span 2;
+  grid-row: 9 /span 3;
+}
+
+.tuad {
+  grid-column: 5 /span 2;
+  grid-row: 9 /span 3;
+}
+
+.mor {
+  grid-column: 7 /span 2;
+  grid-row: 9 /span 3;
+}
+
+.rien {
+  grid-column: 9 /span 2;
+  grid-row: 9 /span 3;
+}
+
+.kit {
+  grid-column: 3 /span 2;
+  grid-row: 12 /span 3;
+}
+
+.mala {
+  grid-column: 5 /span 2;
+  grid-row: 12 /span 3;
+}
+
+.saiyasat {
+  grid-column: 7 /span 2;
+  grid-row: 12 /span 3;
+}
+
+.phaya {
+  grid-column: 9 /span 2;
+  grid-row: 12 /span 3;
+}
+
+.om {
+  grid-column: 3 /span 2;
+  grid-row: 15 /span 3;
+}
+
+.gae {
+  grid-column: 5 /span 2;
+  grid-row: 15 /span 3;
+}
+
+.takrut {
+  grid-column: 7 /span 2;
+  grid-row: 15 /span 3;
+}
+
+.kwak {
+  grid-column: 9 /span 2;
+  grid-row: 15 /span 3;
+}
+
+.rings {
+  grid-column: 3 /span 2;
+  grid-row: 18 /span 3;
+}
+
+/*Desktop Only*/
+
+@media (min-width: 992px){
+
+  .tile:hover {
+    background: rgba(107, 113, 132, 0.5);
+    color: #FFF;
+  }
+
+}
+
+
+/*Mobile: General*/
+
+@media(max-width: 600px){
+
+  .grid {
+    display: grid;
+  	grid-template-columns: 100%;
+    grid-template-rows: repeat(37,1fr);
+    grid-row-gap: 20px;
+  }
+
+  header {
+    background-color: rgb(52, 57, 73);
+    border-bottom: 1px solid rgba(52, 57, 73);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  header img {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  .title {
+    margin-top: 80px;
+    color: #ffffff;
+    font-family: "Open Sans",arial,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .description {
+    color: #ffffff;
+    font-family: "Open Sans",arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  /*Mobile: Main Navigation Tile*/
+
+  .tile {
+    background-color: rgba(31, 37, 56, .8);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+
+  /*Selection Tiles*/
+
+  .all {
+    grid-column: 1;
+    grid-row: 3 /span 2;
+  }
+
+  .somdet {
+    grid-column: 1;
+    grid-row: 5 /span 2;
+  }
+
+  .skin {
+    grid-column: 1;
+    grid-row: 7 /span 2;
+  }
+
+  .pidtha {
+    grid-column: 1;
+    grid-row: 9 /span 2;
+  }
+
+  .paen {
+    grid-column: 1;
+    grid-row: 11 /span 2;
+  }
+
+  .tuad {
+    grid-column: 1;
+    grid-row: 13 /span 2;
+  }
+
+  .mor {
+    grid-column: 1;
+    grid-row: 15 /span 2;
+  }
+
+  .rien {
+    grid-column: 1;
+    grid-row: 17 /span 2;
+  }
+
+  .kit {
+    grid-column: 1;
+    grid-row: 19 /span 2;
+  }
+
+  .mala {
+    grid-column: 1;
+    grid-row: 21 /span 2;
+  }
+
+  .saiyasat {
+    grid-column: 1;
+    grid-row: 23 /span 2;
+  }
+
+  .phaya {
+    grid-column: 1;
+    grid-row: 25 /span 2;
+  }
+
+  .om {
+    grid-column: 1;
+    grid-row: 27 /span 2;
+  }
+
+  .gae {
+    grid-column: 1;
+    grid-row: 29 /span 2;
+  }
+
+  .takrut {
+    grid-column: 1;
+    grid-row: 31 /span 2;
+  }
+
+  .kwak {
+    grid-column: 1;
+    grid-row: 33 /span 2;
+  }
+
+  .rings {
+    grid-column: 1;
+    grid-row: 35 /span 2;
+  }
